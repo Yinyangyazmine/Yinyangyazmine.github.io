@@ -9,7 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
@@ -17,21 +17,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor JS Files -->
+  <!-- JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- everyone's favourite jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-  <!-- Vendor CSS Files  -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- CSS Files  -->
+  <!--<link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">-->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -39,6 +36,9 @@
 </head>
 
 <body>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -79,7 +79,7 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
+  <main id="main" data-aos="fade" data-aos-delay="00">
 
     <!-- ======= End Page Header ======= -->
     <!-- ======= Hero Section ======= -->
@@ -95,13 +95,7 @@
     </div>
   </section><!-- End Hero Section -->
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-    <p>
-    <p>
-    <p>
-    <p>
-    <p>
-    <p>
+  <main id="main" data-aos="fade" data-aos-delay="00">
 
      <!-- ======= Gallery Single Section ======= -->
     <section id="gallery-single" class="gallery-single">
@@ -111,24 +105,12 @@
           <div class="slides-1 portfolio-details-slider swiper">
             <div class="swiper-wrapper align-items-center">
 
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/7.png" alt="Check out Everwoods">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/8.png" alt="Check out Everwoods">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/9.png" alt="Check out Vapormoon">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/10.jpg" alt="Check out Partners In Crime">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/11.jpg" alt="Check out Partners In Crime">
-              </div>
-              <div class="swiper-slide">
-                <img src="assets/img/gallery/12.jpg" alt="Check out Partners In Crime">
-              </div>
+              <div class="swiper-slide"><img src="assets/img/gallery/7.png"  alt="???"></div>
+              <div class="swiper-slide"><img src="assets/img/gallery/8.png"  alt="Check out Everwoods"></div>
+              <!--<div class="swiper-slide"><img src="assets/img/gallery/9.png"  alt="Check out Vapormoon"></div>-->
+              <div class="swiper-slide"><img src="assets/img/gallery/10.jpg" alt="Check out Partners In Crime"></div>
+              <!--<div class="swiper-slide"><img src="assets/img/gallery/11.jpg" alt="???"></div>-->
+              <div class="swiper-slide"><img src="assets/img/gallery/12.png" alt="???"></div>
 
             </div>
             <div class="swiper-pagination"></div>
@@ -138,16 +120,24 @@
 
         </div>
 
-        <div class="row justify-content-between gy-4 mt-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-description">
-                
-
-        </div>
-
       </div>
     </section><!-- End Gallery Section -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper(".swiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      });
+  </script>
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
